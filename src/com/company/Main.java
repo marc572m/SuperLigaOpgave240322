@@ -31,9 +31,9 @@ public class Main {
         hashSetTabel.add(bif);
         hashSetTabel.add(aab);
         hashSetTabel.add(rfc);
-        for (SuperligaKlub s: hashSetTabel) {
-            System.out.println(s + " ");
-        }
+        //for (SuperligaKlub s: hashSetTabel) {
+          //  System.out.println(s + " ");
+       // }
 
         Set<SuperligaKlub> linkedHashSetTabel = new LinkedHashSet<>();
         linkedHashSetTabel.add(fck);
@@ -55,6 +55,33 @@ public class Main {
         klubber.put(bif,"Niels Frederiksen");
         klubber.put(aab,"Jacob Friis");
         klubber.put(rfc,"Thomas Thomasberg");
+        System.out.println("HashMap:");
+        for (SuperligaKlub key : klubber.keySet()){
+            System.out.println(key + " = "+ klubber.get(key));
+        }
+
+        System.out.println("LinkedHashmap:");
+        Map<SuperligaKlub, String> klubber1 = new LinkedHashMap<>();
+        klubber1.put(fck,"Jess Thorup");
+        klubber1.put(fcm,"Bo Henriksen");
+        klubber1.put(bif,"Niels Frederiksen");
+        klubber1.put(aab,"Jacob Friis");
+        klubber1.put(rfc,"Thomas Thomasberg");
+        for (SuperligaKlub key : klubber1.keySet()){
+            System.out.println(key + " = "+ klubber1.get(key));
+        }
+
+        System.out.println("TreeMap:");
+        Map<SuperligaKlub, String> klubber2 = new TreeMap<>();
+        klubber2.put(fck,"Jess Thorup");
+        klubber2.put(fcm,"Bo Henriksen");
+        klubber2.put(bif,"Niels Frederiksen");
+        klubber2.put(aab,"Jacob Friis");
+        klubber2.put(rfc,"Thomas Thomasberg");
+        for (SuperligaKlub key : klubber2.keySet()){
+            System.out.println(key + " = "+ klubber2.get(key));
+        }
+
 
     /*BubbleSort1 bubble = new BubbleSort1();
     bubble.bubbleSort(tabel1);
