@@ -49,6 +49,17 @@ public class Main {
         linkedTreeSet.add(aab);
         linkedTreeSet.add(rfc);
 
+        TreeSet<SuperligaKlub> linkedTreeSet1 = new TreeSet<SuperligaKlub>(new GuleKortComparator());
+        linkedTreeSet1.add(fck);
+        linkedTreeSet1.add(fcm);
+        linkedTreeSet1.add(bif);
+        linkedTreeSet1.add(aab);
+        linkedTreeSet1.add(rfc);
+        for (SuperligaKlub s: linkedTreeSet1) {
+          System.out.println(s + " ");
+         }
+
+/*
         Map<SuperligaKlub,String> klubber = new HashMap<>();
         klubber.put(fck,"Jess Thorup");
         klubber.put(fcm,"Bo Henriksen");
@@ -82,6 +93,8 @@ public class Main {
             System.out.println(key + " = "+ klubber2.get(key));
         }
 
+
+ */
 
     /*BubbleSort1 bubble = new BubbleSort1();
     bubble.bubbleSort(tabel1);
