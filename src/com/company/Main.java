@@ -1,8 +1,6 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class Main {
 
@@ -27,6 +25,37 @@ public class Main {
         tabel2.add(aab);
         tabel2.add(rfc);
 
+        Set<SuperligaKlub> hashSetTabel = new HashSet<>();
+        hashSetTabel.add(fck);
+        hashSetTabel.add(fcm);
+        hashSetTabel.add(bif);
+        hashSetTabel.add(aab);
+        hashSetTabel.add(rfc);
+        for (SuperligaKlub s: hashSetTabel) {
+            System.out.println(s + " ");
+        }
+
+        Set<SuperligaKlub> linkedHashSetTabel = new LinkedHashSet<>();
+        linkedHashSetTabel.add(fck);
+        linkedHashSetTabel.add(fcm);
+        linkedHashSetTabel.add(bif);
+        linkedHashSetTabel.add(aab);
+        linkedHashSetTabel.add(rfc);
+
+        Set<SuperligaKlub> linkedTreeSet = new TreeSet<>();
+        linkedTreeSet.add(fck);
+        linkedTreeSet.add(fcm);
+        linkedTreeSet.add(bif);
+        linkedTreeSet.add(aab);
+        linkedTreeSet.add(rfc);
+
+        Map<SuperligaKlub,String> klubber = new HashMap<>();
+        klubber.put(fck,"Jess Thorup");
+        klubber.put(fcm,"Bo Henriksen");
+        klubber.put(bif,"Niels Frederiksen");
+        klubber.put(aab,"Jacob Friis");
+        klubber.put(rfc,"Thomas Thomasberg");
+
     /*BubbleSort1 bubble = new BubbleSort1();
     bubble.bubbleSort(tabel1);
         for (int i = 0; i < tabel1.length; i++){
@@ -39,7 +68,7 @@ public class Main {
 
 
 
-        VundnekampeComparator vc1 = new VundnekampeComparator();
+       /* VundnekampeComparator vc1 = new VundnekampeComparator();
         Collections.sort(tabel2,vc1);
         GuleKortComparator gkc = new GuleKortComparator();
         //Collections.sort(tabel2,gkc);
@@ -59,6 +88,8 @@ public class Main {
             System.out.print(tabel1[i] + " ");
             System.out.println();
         }
+
+        */
 
 
 
